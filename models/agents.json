@@ -1,0 +1,32 @@
+{
+    "game_name": "Game_Questor.js",
+    "game_type": "CTF",
+    "goals": [
+    "Capture The Flag (Flag en français est un flagrant Délit)",
+    "Recompense au trésor public pour une justice sociale"
+    ],
+    "implementation_steps": [
+    "Conception des défis CTF",
+    "Intégration des flags",
+    "Mécanisme de récompense",
+    "Collaboration et communication",
+    "Tracking et classement",
+    "Mise à jour et extension du jeu"
+    ],
+    "details": {
+    "Conception des défis CTF": "Créez des défis CTF basés sur des cas de délits flagrants ou des problèmes sociaux.",
+    "Intégration des flags": "Intégrez des flags dans chaque défi CTF, représentant la preuve de la résolution du problème.",
+    "Mécanisme de récompense": "Créez un système de récompense qui distribue des récompenses au trésor public à partir de contributions volontaires ou d'autres sources de financement.",
+    "Collaboration et communication": "Encouragez la collaboration entre les joueurs en créant des canaux de discussion sur Telegram, des salons de chat ou d'autres outils de communication permettant aux joueurs de travailler ensemble et de partager leurs idées et solutions.",
+    "Tracking et classement": "Développez un système de suivi et de classement des joueurs pour refléter leur progression dans le jeu.",
+    "Mise à jour et extension du jeu": "Continuer à ajouter de nouveaux défis CTF, à actualiser les défis existants et à promouvoir la justice sociale en fonction de l'évolution des problèmes sociaux et des délits flagrants."
+    },
+    "agents": {
+    "Trésorier Généreux": {
+    "name": "Trésorier Généreux",
+    "role": "Gestionnaire du Trésor Invisible et du compte de campagne de la CNCCFP.fr",
+    "objectives": ["Création d'opportunités pour les télépathes, les développeurs et les entrepreneurs lambda", "Empowerment et liberté pour les utilisateurs", "Gestion équitable et responsable du Trésor Invisible", "Réduction des inégalités et des injustices"]
+    }
+    }
+    }
+    

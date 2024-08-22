@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Page Index</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f5f5f5;
+ }
+ .container {
+ margin-top: 2rem;
+ }
+ .card {
+ margin-bottom: 2rem;
+ }
+ .card-header {
+ background-color: #007bff;
+ color: #fff;
+ }
+ .emoji-picker {
+ position: absolute;
+ bottom: 100%;
+ left: 50%;
+ transform: translateX(-50%);
+ z-index: 10;
+ }
+ </style>
+</head>
+<body>
+ <div class="container text-center">
+ <h1>Bienvenue sur ma page web !</h1>
+ <p>Voici quelques ressources utiles :</p>
+ <ul class="list-unstyled">
+ <li><a href="http://archive.org" target="_blank">Archive.org</a></li>
+ <li><a href="https://github.com/universmc/DisKetCrypto" target="_blank">DisKetCrypto sur GitHub</a></li>
+ <li><a href="https://www.google.com" target="_blank">Google</a></li>
+ <li><a href="https://www.w3big.com/deep_learning" target="_blank">Deep Learning sur W3Big</a></li>
+ </ul>
+ <h2>Méthodes de recherche et apprentissage automatique :</h2>
+ <ul class="list-unstyled">
+ <li><strong>Méthode de recherche :</strong> Google</li>
+ <li><strong>Méthode d'apprentissage automatique :</strong> Deep Learning</li>
+ </ul>
+ <h2>Composant Modal sur des emojis :</h2>
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#emojiModal">
+ <span role="img" aria-label="Discussion">💬</span>
+ </button>
+ <div class="modal fade" id="emojiModal" tabindex="-1" aria-labelledby="emojiModalLabel" aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered">
+ <div class="modal-content">
+ <div class="modal-header">
+ <h5 class="modal-title" id="emojiModalLabel">Emojis</h5>
+ <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+ </div>
+ <div class="modal-body">
+ <div class="emoji-picker">
+ <!-- Emojis ici -->
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBud7TlRbs/ic4AwGcFZOxg5DpPt8EgeUIgIwzjWfXQKWA3" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-gaEFwI6sU9sWmDjfOB9mY3Vk1d8/W3squJchtzjJ1/1mZ3F6X6/MM2b5MryBnUbD" crossorigin="anonymous"></script>
+ <script>
+ const emojiPicker = document.querySelector('.emoji-picker');
+ const emojis = [
+ { emoji: '🛠️', name: 'Tool', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '👍', name: 'Thumbs Up', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🥊', name: 'Fist', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🇫🇷', name: 'French Flag', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '✨💪', name: 'Sparkles and Muscle', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '💰', name: 'Money', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🔥', name: 'Fire', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🏛', name: 'Building', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🌍', name: 'Globe', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '📊', name: 'Chart', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '💻', name: 'Computer', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🗣', name: 'Speech Balloon', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🤝', name: 'Handshake', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '💥', name: 'Collision', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🤖', name: 'Robot', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🥊🤖🥊', name: 'Robot Fighting', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🤓', name: 'Nerd', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🤩', name: 'Star-struck', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🎈', name: 'Balloon', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🎥', name: 'Film Frames', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '📺', name: 'Television', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🥊', name: 'Fist', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🏫', name: 'School', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🗝️', name: 'Key', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ { emoji: '🏴‍☠️', name: 'Pirate Flag', wiki: 'https://www.wikidata.org/wiki/User:Gpt.univers-mc', codex: '📔.codex' },
+ ];
+ for (const emoji of emojis) {
+ const emojiElement = document.createElement('span');
+ emojiElement.classList.add('emoji');
+ emojiElement.textContent = emoji.emoji;
+ emojiElement.title = emoji.name;
+ emojiElement.dataset.wiki = emoji.wiki;
+ emojiElement.dataset.codex = emoji.codex;
+ emojiElement.addEventListener('click', () => {
+ window.open(emoji.wiki, '_blank');
+ });
+ emojiPicker.appendChild(emojiElement);
+ }
+ </script>
+</body>
+</html>
+
+J'ai inclus le CDN Bootstrap pour les styles et les scripts. J'ai également créé un composant Modal pour afficher les emojis et leur nom, ainsi qu'un écouteur d'événement pour ouvrir la page Wikidata de chaque emoji lorsqu'il est cliqué. Les emojis sont stockés dans un tableau JavaScript et sont générés dynamiquement dans le DOM.
+
+J'espère que cela t'aides !

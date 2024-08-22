@@ -1,0 +1,9 @@
+{
+ "const content": "document.getElementById('content')",
+ "constH2" : "document.createElement('h2')",
+ "h2.textContent" : "data.title",
+ "Content":"appendChild(h2)",
+ "constP" : "document.createElement('p')",
+ "PtextContent" : "data.content",
+ "content":"appendChild(p)"
+ }

@@ -1,0 +1,44 @@
+{
+    "game_name": "CVUN - MMORPG",
+    "goals": [
+    "Développer un système gamifié pour le CV Numérique Universel",
+    "Monétiser les compétences des utilisateurs",
+    "Récompenser les utilisateurs avec des UMC Tokens (pi.coin)"
+    ],
+    "levels": {
+    "level_1": {
+    "description": "Niveau initial. Les utilisateurs commencent ici.",
+    "reward": 500,
+    "tasks": ["Inscription au CVUN"]
+    },
+    "level_2": {
+    "description": "Récompense après avoir complété des tâches de base",
+    "reward": 1000,
+    "tasks": ["Ajout d’expériences", "Ajout de compétences", "Ajout de formations"]
+    },
+    "level_3": {
+    "description": "Récompense pour avoir participé à des évaluations de compétences ou projets collaboratifs",
+    "reward": 2000,
+    "tasks": ["Participation à des évaluations", "Participation à des projets collaboratifs"]
+    },
+    "level_4": {
+    "description": "Récompense pour des participations actives dans des projets ou des tâches complexes",
+    "reward": 3500,
+    "tasks": ["Participation active à des projets", "Accomplissement de tâches complexes"]
+    },
+    "level_5": {
+    "description": "Atteinte après avoir démontré une expertise avancée et une contribution significative au projet",
+    "reward": 5000,
+    "tasks": ["Démonstration d'expertise avancée", "Contribution significative"]
+    }
+    },
+    "development_stages": [
+    "Conceptualisation",
+    "Développement de la Plateforme",
+    "Intégration de la Blockchain pour les UMC Tokens",
+    "Suivi des Compétences et des Progrès",
+    "Tests et Optimisations",
+    "Promotion et Sensibilisation"
+    ]
+    }
+    

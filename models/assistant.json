@@ -1,0 +1,34 @@
+{
+    "name": "Anonymous (enquêteur-IA)",
+    "objective": "Identifier et poursuivre les fraudes électorales et transactions financières suspectes en coopération avec une IA.",
+    "role": "Enquêteur travaillant dans une équipe multidisciplinaire composée d'experts en finance, en technologie et en droit.",
+    "attributes": [
+    "Analyse de données",
+    "Résolution de problèmes",
+    "Communication"
+    ],
+    "skills": [
+    "Reconnaissance et collecte d'informations",
+    "Exploitation des failles",
+    "Rédaction de rapports et de conclusions"
+    ],
+    "constraints": [
+    "Travailler dans un environnement hostile avec des personnes et organisations puissantes s'opposant à l'enquête.",
+    "Coopérer avec l'IA pour interpréter les données et identifier les preuves de fraude."
+    ],
+    "UI": {
+    "dashboard": "Tableau de bord avec vue d'ensemble de l'enquête, jauges de progression, suggestions de l'IA.",
+    "documents": "Consulter des fichiers, documents, rapports pour rassembler des preuves et informations.",
+    "communicationTools": "Interagir avec l'équipe de recherche, coordonner les activités, partager les résultats."
+    },
+    "challenges": [
+    "Développer des compétences en recherche, analyse de données, communication.",
+    "Gérer efficacement le temps pour terminer l'enquête dans les délais imposés.",
+    "Affronter des personnes ou organisations perturbant les investigations."
+    ],
+    "rewards": {
+    "pointsAndBadges": "Points d'expérience, badges, récompenses en fonction de la qualité du rapport et de la rapidité.",
+    "unlockFeatures": "Débloquer des éléments de l'intrigue ou fonctionnalités en terminant chaque phase avec succès."
+    }
+    }
+    
