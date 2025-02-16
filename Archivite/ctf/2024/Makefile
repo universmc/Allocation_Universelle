@@ -3,57 +3,11 @@ NODE_ENV = development
 NODE_PORT = 5144
 NODE_APP = index.js
 
-COMMANDE1_MSG="✨ Menu ✨"
-
-work_MSG="✨ Lancement de workplan.json✨"
-CTRL_MSG="✨ Lancement du contrôleur NES✨"
-COMMANDE1_MSG="✨ Lancement de groq server✨"
-cmd_MSG="✨ Lancement de l'application✨"
-map_MSG="✨ Lancement de l'application MapAscii✨"
-
-groq:
-	@echo "${bot_MSG}"
-	@./telegram/groq.js
-
-bot:
-	@echo "${bot_MSG}"
-	@./models.sh
-
-qp:
-	@echo "${bot_MSG}"
-	@node qp.js
-
-ctrl:
-	@echo "${CTRL_MSG}"
-	@node ctrl.js
-
-wp:
-	@echo "${work_MSG}"
-	@node workplan.js
-map:
-	@echo "${map_MSG}"
-	@npm run map
-
-# Makefile pour mapper les boutons du contrôleur NES
-.PHONY: bouton_a bouton_b bouton_start bouton_select map bot
-
-bouton_a:
-	@echo "🌴 Compiling project Bouton 🅰️  .. 🌴 🌴 .."
-
-bouton_b:
-	@echo "✨ DevOps bouton 🅱️  ✨"
-
-bouton_start:
-	@echo "🔷 Starting the server...🔷 "
-	@./menu.sh
-
-bouton_select:
-	@echo "💾 Pausing process or displaying status...💾 "
-menu:
-	@echo "Welcom To cycliq Economical system."
+menu :
+	@echo "welcom to Prison de la Bastille, https://boutique.elysee.fr"."
 	@echo""
 	@echo"╔═════════════════════════════════════╗     ╔═════════════════════════════════════════════════════════════════════╗"
-	@echo"╠═══════════ ✨ Pi Console ═══════════╣     ║  [💫] [💬] [📚] [🌌] [✨] [⚡️] [💰] [🌴] [📱] [📡]              [🛰]║"
+	@echo"╠═══════════-- 🤖 adoPi --════════════╣     ║  [💫] [🏛] [🤗] [💬] [📚] [💻] [📱] [🏦] [📡]<                >[🛰]║"
 	@echo"║                                     ║     ╠═════════════════════════════════════════════════════════════════════╣"
 	@echo"║                                     ║     ║                                                                     ║"
 	@echo"║                                     ║     ║                                                                     ║"
@@ -75,83 +29,59 @@ menu:
 	@echo"║                                     ║     ║                                                                     ║"
 	@echo"║                                     ║     ║                                                                     ║"
 	@echo"╠═════════════════════════════════════╣     ╠═════════════════════════════════════════════════════════════════════╣"
-	@echo"║(∏)                                  ║     ║[💻.📱]:/<                                                        /%>║"
+	@echo"║(PS1)                                ║     ║[PS2]:/<                                                          /%>║"
 	@echo"╚═════════════════════════════════════╝     ╚═════════════════════════════════════════════════════════════════════╝"	
 	@echo""
 
 MAGIC_TARGETS := codex build rep file script clean
 
-dev: tasks showTasks
-
-tasks:
-	@echo "✨ Initialisation Du plan d'action✨"
-	@node qp.js showTasks "/brainstrom 💰"
-
-# Tâche Make pour ajouter une tâche
-showTasks:
-	@node qp.js addTask $(task)
-	@cat readme.md
-	@npm run start
-
-test :
-	@node qp.js
-
-run:
-	@node ./srv/srv.js
-
-brainstorm:
-	@echo "✨ Initialisation de la session de brainstorming✨"
-	@node gdev.js
-	@echo "✨ Session terminée✨"
-
+dev:
 
 all: $(MAGIC_TARGETS)
+# Magic COMPILER groq quantum
+
 
 update:
-	@echo "✨ Mise en état du dossier sur github✨"
+	@echo "✨ Mise en état du dossier de l'enquête sur les partie Politique de la Macronnie ✨"
 	@git add .
 	@git commit -m "test"
 	@git push
-	@echo "✨ Mise à jour terminée✨"
 
-init: gantt phase1 phase2 phase3 phase4 phase5 phase6 phase7 phase8
-# Magic COMPILER groq quantum
-gantt:
-	@echo "initialisation de l'instance"
-	@git clone auto
+mand:
+	@echo "création d'une instance dans le cadre de la procédure d'enquête"
+	@node MandatoryAi_bot.js
 
-seq1:
-	@echo "phase de conception"
-	@node mission.js
+build: gen ctf srv
+# Fabrication de la magie
+gen:
+	@echo "création de la documentation"
+	@node generate.js
 
-seq2:
-	@echo "phase de configuration"
-	@node configuration.js
+ctf:
+	@echo "** [GEN]:run Capture the Flag -CTF_ ** :"
+	@node CTF.js
 
-seq3:
-	@echo "phase d'entrainnement du model IA"
-	@node models.js
+srv:
+	@echo "démarrage du serveur MandaroryAi_bot"
+	@node "MandatoryAi_bot.js"
 
-seq4:
-	@echo "phase de gestion et iteration du frontend"
-	@git clone src.js
-	
-seq5:
-	@echo "phase de gestion et iteration du backend"
-	@node srv.js
+buildJson:
+	@echo "Encoding knowledge in cosmic structures, truths to uphold"
+	@node src/wirefram.js
+rep:
+	@echo "Perceiving the quantum realm's Cosmic ia Consciencius World && vast landscape"
+	@vim -a build/build.sh &&
+	@vim -wq
 
+file:
+	@echo "Revealing hidden X11 dimensions, secrets to escape"
+	@bash src/sh/build.sh && 
+	@touch build/files.sh
 
-seq6:
-	@echo "phase de test et debugage"
-	@node data.js
-
-seq7:
-	@echo "phase de validation documentation"
-	@node models/modelcss.js
-
-seq8:
-	@echo "phase d'affiliation et contribution"
-	@node models/modelcss.js
+script:
+	@echo "Unleashing quantum Magic Mafile with every script we shape"
+	@bash src/sh/build.sh && 
+	@touch build/files.sh
 
 server:
 	@node srv/Telegram/server.js
