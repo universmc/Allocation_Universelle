@@ -1,0 +1,24 @@
+{
+    "ateliers": [
+        {
+            "nom": "FactorayAi Paris",
+            "adresse": "10 rue de l'exemple, 75000 Paris",
+            "materiaux": ["plastique", "aluminium", "carton"]
+        },
+        {
+            "nom": "FactorayAi Lyon",
+            "adresse": "20 rue de l'exemple, 69000 Lyon",
+            "materiaux": ["verre", "tissu", "papier"]
+        }
+    ],
+    "produits": [
+        {
+            "nom": "Lampe en plastique recyclé",
+            "prix": 1
+        },
+        {
+            "nom": "Table en carton recyclé",
+            "prix": 1
+        }
+    ]
+}
